@@ -63,6 +63,7 @@ img {
 }
 
 .card__text {
+  padding-inline: 0.8rem;
   letter-spacing: 0.2px;
   color: var(--slate-500);
 }
