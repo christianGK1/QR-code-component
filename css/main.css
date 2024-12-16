@@ -1,0 +1,68 @@
+:root {
+  --slate-300: #d5e1ef;
+  --slate-500: #68778d;
+  --slate-900: #1f314f;
+  --white: #fff;
+
+  --fontFamily: 'Outfit', sans-serif;
+  --text-preset-1: 700 2.2rem / 120% var(--fontFamily);
+  --text-preset-2: 400 1.5rem / 140% var(--fontFamily);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 100vh;
+  padding-inline: 2.75rem;
+  font: var(--text-preset-2);
+  background-color: var(--slate-300);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.card {
+  max-inline-size: 32rem;
+  padding-inline: 1.6rem;
+  padding-block: 1.6rem 4rem;
+  text-align: center;
+  border-radius: 2rem;
+  background-color: var(--white);
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0.1rem 1rem 2.4rem -1.1rem rgba(0, 0, 0, 0.75);
+}
+
+.card__img {
+  border-radius: 1rem;
+}
+
+.card__title {
+  margin-block: 2.4rem 1.6rem;
+  font: var(--text-preset-1);
+  text-wrap: balance;
+  color: var(--slate-900);
+}
+
+.card__text {
+  letter-spacing: 0.2px;
+  color: var(--slate-500);
+}
